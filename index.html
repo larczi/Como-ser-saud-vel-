@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como Ser Saudável</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        .button-container {
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .button-container button {
+            margin: 10px;
+            padding: 15px;
+            border: none;
+            background-color: #28a745;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .button-container button:hover {
+            background-color: #218838;
+        }
+        section {
+            display: none;
+            padding: 20px;
+            background: white;
+            margin: 20px auto;
+            width: 80%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <script>
+        function mostrarCapitulo(id) {
+            document.querySelectorAll('section').forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Como Ser Saudável: Um Guia Completo</h1>
+        <p>Clique em um capítulo para ler mais:</p>
+    </header>
+    <div class="button-container">
+        <button onclick="mostrarCapitulo('introducao')">Introdução</button>
+        <button onclick="mostrarCapitulo('alimentacao')">Alimentação</button>
+        <button onclick="mostrarCapitulo('exercicios')">Exercícios</button>
+        <button onclick="mostrarCapitulo('saude-mental')">Saúde Mental</button>
+        <button onclick="mostrarCapitulo('habitos')">Hábitos Saudáveis</button>
+        <button onclick="mostrarCapitulo('digestao')">Saúde Digestiva</button>
+        <button onclick="mostrarCapitulo('estresse')">Gerenciamento do Estresse</button>
+        <button onclick="mostrarCapitulo('tecnologia')">Tecnologia</button>
+    </div>
+    <main>
+        <section id="introducao">
+            <h2>Introdução</h2>
+            <p>A busca por um estilo de vida saudável envolve alimentação equilibrada, exercícios físicos, saúde mental e hábitos positivos.</p>
+        </section>
+        <section id="alimentacao">
+            <h2>Capítulo 1: Alimentação Saudável</h2>
+            <p>Uma alimentação equilibrada é essencial para a saúde.</p>
+            <ul>
+                <li>Carboidratos saudáveis: arroz integral, aveia.</li>
+                <li>Proteínas magras: frango, peixes, ovos.</li>
+                <li>Gorduras boas: azeite, abacate, castanhas.</li>
+                <li>Fibras e vitaminas: frutas e legumes variados.</li>
+            </ul>
+        </section>
+        <section id="exercicios">
+            <h2>Capítulo 2: Exercícios Físicos</h2>
+            <p>Atividades físicas fortalecem o coração e ajudam no controle do peso.</p>
+            <ul>
+                <li>Aeróbicos: caminhada, corrida, natação.</li>
+                <li>Musculação: fortalecimento muscular.</li>
+                <li>Flexibilidade: yoga e pilates.</li>
+            </ul>
+        </section>
+        <section id="saude-mental">
+            <h2>Capítulo 3: Saúde Mental</h2>
+            <p>Práticas para o equilíbrio emocional e redução do estresse.</p>
+        </section>
+        <section id="habitos">
+            <h2>Capítulo 4: Hábitos Saudáveis</h2>
+            <p>Pequenas mudanças trazem grandes benefícios.</p>
+        </section>
+        <section id="digestao">
+            <h2>Capítulo 5: Saúde Digestiva</h2>
+            <p>O intestino influencia a imunidade e bem-estar geral.</p>
+        </section>
+        <section id="estresse">
+            <h2>Capítulo 6: Gerenciamento do Estresse</h2>
+            <p>Reduza o estresse com técnicas de relaxamento.</p>
+        </section>
+        <section id="tecnologia">
+            <h2>Capítulo 7: Tecnologia e Saúde</h2>
+            <p>O impacto da tecnologia no bem-estar.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Como Ser Saudável. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
